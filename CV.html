@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="bara_navigare.css"> 
+    <link rel="stylesheet" href="cv.css"> 
+      <title>CV</title>
+    </head>
+    <body style="font-family: 'Times New Roman'">
+         <!-- bara de navigare orizontala -->
+    <nav>
+      <div class="logo">
+        <!--  logo-ul ca link catre pagina principala -->
+        <a href="home.html">
+            <img src="alina.jpg" alt="Logo-ul meu">
+        </a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">&#9776;</div> 
+      <div class="nav-links" id="navLinks">
+      <a href="home.html" >Home</a>
+      <a href="CV.html" class="active">CV</a>
+      <a href="contact.html">Contact</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="CV.html" download="CV_Mangiurea_Alina.html">Descarcă CV-ul</a>
+      </div>
+    </nav>
+
+
+    <main>
+        <section >
+            <h2>Informații personale</h2>
+            <p>Nume: Mangiurea Alina Daniela</p>
+            <p>Email: alinadanielamangiurea@gmail.com</p>
+            <p>Telefon: 0736 679 917</p>
+            <p>Adresă: Strada Moinești, Nr. 7, București, România</p>
+        </section>
+
+        <section >
+            <h2>Educație</h2>
+            <ul>
+                <li> Facultatea de Automatică și Calculatoare  - Ingineria Sistemelor (2023 - prezent)</li>
+                <li> Colegiul National "Mihai Viteazul"  - (2019-2023)</li>
+            </ul>
+        </section>
+
+        <section >
+            <h2>Experiență de voluntariat</h2>
+            <ul>
+                <li> Voluntar, LSAC București  (2023-prezent)
+                    <ul>
+                        <li>Organizarea de evenimente pentru studenții facultății și nu numai.</li>
+                        <li>Colectarea de fonduri și resurse pentru diverse proiecte.</li>
+                        <li>Colaborarea cu echipa pentru promovarea activităților educaționale și culturale.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section >
+            <h2>Competențe</h2>
+            <ul>
+                <li>Programare: C, C++</li>
+                <li>Web Development: HTML</li>
+                <li>Gestionarea proiectelor</li>
+                <li>Comunicare eficientă</li>
+                <li>Punctualitate</li>
+                <li>Lucru în echipă</li>
+                <li>Rezolvare de probleme</li>
+                <li>Adaptabilitate</li>
+            </ul>
+            <h2>Competențe lingvistice</h2>
+            <ul>
+                <li>Română: Nativ</li>
+                <li>Engleză: Mediu</li>
+                <li>Franceză: Începător</li>
+            </ul>
+        </section>
+
+        <section >
+            <h2>Proiecte și realizări</h2>
+            <ul>
+                <li> Program de proiectare a algoritmilor în C  - Simularea unui meci utilizând tehnici de programare eficientă.</li>
+                <li> Echipă de organizare  - Parte din echipa de organizare a departamentului de HR în cadrul evenimentului Bucharest Walk, organizat de Liga Studenților din Automatică și Calculatoare (LSAC).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mangiurea Alina Daniela. Toate drepturile rezervate.</p>
+        <a href="https://www.instagram.com/alinamangiurea/?next=%2F" target="_blank">Instagram</a>
+      <a href="mailto:alinadanielamangiurea@gmail.com">Email</a>
+    </footer>
+     
+        <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('active'); 
+      }</script>
+</body>
+</html>

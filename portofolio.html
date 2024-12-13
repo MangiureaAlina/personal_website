@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bara_navigare.css">
+    <link rel="stylesheet" href="portofolio.css">
+    <title> Portofolio</title>
+</head>
+<body>
+       <!-- Bara de navigare orizontala -->
+    <nav>
+        <div class="logo">
+          <!-- logo-ul ca link catre pagina principala -->
+          <a href="home.html">
+              <img src="alina.jpg" alt="Logo-ul meu">
+          </a>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div> 
+      <div class="nav-links" id="navLinks">
+        <a href="home.html" >Home</a>
+        <a href="CV.html">CV</a>
+        <a href="contact.html" >Contact</a>
+        <a href="portofolio.html" class="active">Portofolio</a>
+        <a href="CV.html" download="CV_Mangiurea_Alina.html">Descarcă CV-ul</a>
+        </div>
+      </nav>
+  
+
+      <main>
+        <section class="gallery">
+            <h2>Hobby-uri</h2>
+           
+    
+            <div class="image-container">
+                <div class="image-item">
+                    <div class="image-overlay">
+                        <img src="9.jpg" alt="Imagine Desenat">
+                        <div class="overlay-text">Desenat</div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image-overlay">
+                        <img src="m1.jpg" alt="Imagine Baking">
+                        <div class="overlay-text">Gatit</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2024 Mangiurea Alina Daniela. Toate drepturile rezervate.</p>
+        <a href="https://www.instagram.com/alinamangiurea/?next=%2F" target="_blank">Instagram</a>
+        <a href="mailto:alinadanielamangiurea@gmail.com">Email</a>
+    </footer>
+   
+   
+      <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active'); // Adaugă/Elimină clasa "active"
+    }</script>
+</body>
+</html>

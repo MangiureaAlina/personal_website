@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bara_navigare.css">
+    <title>Home</title>
+  </head>
+  <body>
+     <!-- bara de navigare orizontala -->
+     <nav>
+      <div class="logo">
+        <!-- logo-ul ca link către pagina principala -->
+        <a href="home.html">
+            <img src="alina.jpg" alt="Logo-ul meu">
+        </a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">&#9776;</div> <!-- &#9776; burger icon  -->
+      <div class="nav-links" id="navLinks">
+      <a href="home.html" class="active">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="contact.html"  >Contact</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="CV.html" download="CV_Mangiurea_Alina.html">Descarcă CV-ul</a>
+      </div>
+    </nav>
+
+    
+
+    <!-- Conținut principal -->
+    <main>
+      <h1>Mangiurea Alina</h1>
+      <section class="profile-section">
+        <!-- Poza -->
+        <img src="Mangiurea_Alina.jpg" alt="Poza">
+
+        <!-- Text -->
+        <div class="text-content">
+          <h2>Despre mine</h2>
+          <p>Sunt Mangiurea Alina Daniela, am 20 de ani, sunt din Brăila, dar studiez în București. Sunt studentă în anul II la Facultatea de Automatică și Calculatoare, domeniul Ingineria Sistemelor, Universitatea Politehnică București.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Mangiurea Alina Daniela. Toate drepturile rezervate.</p>
+      <a href="https://www.instagram.com/alinamangiurea/?next=%2F" target="_blank">Instagram</a>
+      <a href="mailto:alinadanielamangiurea@gmail.com">Email</a>
+    </footer>
+   
+      <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active'); 
+    }</script>
+  </body>
+</html>

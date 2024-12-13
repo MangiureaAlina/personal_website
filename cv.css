@@ -1,0 +1,62 @@
+ 
+/* Inaltimea sectiunilor pentru a face loc pentru bara de navigare fixa */
+/*main {
+    margin-top: 80px;  /* Lasam un spațiu pentru bara de navigare fixă */
+   /* padding: 20px;
+}*/
+
+/* Titluri pentru sectiuni (h2) */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2a1f1f;
+    text-transform: uppercase;
+}
+
+/* Sectiuni individuale */
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+ul li ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+
+/* Media query pentru a face pagina responsive pe dispozitive mai mici */
+@media (max-width: 768px) {
+    /*  dimensiunile pentru mobile */
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    /*  stilurile pentru linkurile din nav pe mobil */
+    nav a {
+        font-size: 16px;
+    }
+}

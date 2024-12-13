@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bara_navigare.css">  
+    <link rel="stylesheet" href="contact.css">  
+    <title>Contact</title>
+</head>
+<body style="font-family: 'Times New Roman'">
+    <!-- Bara de navigare orizontala -->
+    <nav>
+      <div class="logo">
+        <!-- logo-ul ca link catre pagina principala -->
+        <a href="home.html">
+            <img src="alina.jpg" alt="Logo-ul meu">
+        </a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">&#9776;</div> <!-- &#9776; burger icon  -->
+      <div class="nav-links" id="navLinks">
+      <a href="home.html" >Home</a>
+      <a href="CV.html">CV</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="CV.html" download="CV_Mangiurea_Alina.html">Descarcă CV-ul</a>
+    </div>
+    </nav>
+
+    <!-- Titlul paginii -->
+    <main>
+        <h1>Contactează-mă</h1>
+        <form action="mailto:alina.mangiurea@stud.acs.upb.ro" method="get" class="contact-form">
+            <label for="name">Nume:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Subiect:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="reason">Motivul contactului:</label><br>
+            <select id="reason" name="reason" required>
+                <option value="">Selectează un motiv</option>
+                <option value="inquiry">Întrebare</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Asistență</option>
+                <option value="other">Altceva</option>
+            </select><br>
+
+            <label for="body">Mesaj:</label><br>
+            <textarea id="body" name="body" rows="4" required></textarea><br>
+
+            <input type="submit" value="Trimite">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mangiurea Alina Daniela. Toate drepturile rezervate.</p>
+        <a href="https://www.instagram.com/alinamangiurea/?next=%2F" target="_blank">Instagram</a>
+        <a href="mailto:alinadanielamangiurea@gmail.com">Email</a>
+    </footer>
+    
+        <script>
+        function toggleMenu() {
+          const navLinks = document.getElementById('navLinks');
+          navLinks.classList.toggle('active'); // Adauga/Elimina clasa "active"
+      }</script>
+</body>
+</html>
